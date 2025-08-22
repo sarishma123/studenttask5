@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT TASK MANAGER</title>
+    <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+    <header >
+        <h1>Student Task Manager</h1>
+        <h5>Organize and track your tasks efficiently</h5>
+    </header>
+    <main>
+        <section class="c1">
+            <h2>Add a new task</h2>
+            <label for="task">
+                Task Name
+                <input type="text" id="task" placeholder="Enter task name">
+            </label>
+            <label for="due-date">
+                Due Date
+                <input type="date" id="due-date"/>
+            </label>
+            <label for="priority">
+                Priority
+                <select id="priority">
+                    <option value="low">Low</option>    
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </label>
+            <button id="primary-btn">Add Task</button>
+        </section>
+        <section class="c2">
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="task-body">
+                    <tr>
+                        <td>Math assignment</td>
+                        <td>2025-07-25</td>
+                        <td>High</td>
+                        <td ><span id="pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>History assignment </td>
+                        <td>2025-07-25</td>
+                        <td>Medium</td>
+                        <td ><span id="overdue">Overdue</span></td>
+                    </tr>
+                    <tr>
+                        <td>Science project</td>
+                        <td>2025-07-25</td>
+                        <td>Low</td>
+                        <td ><span id="completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2025 Student Task Manager.All rights reserved.</p>
+    </footer>
+</body>
+</html>
